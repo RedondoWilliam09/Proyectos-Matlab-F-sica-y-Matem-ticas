@@ -8,11 +8,11 @@ clc
 
 k=2;
 m=0.5;
-b=0.3DO ;
+b=0;
 x0=1;
 xp0=0;
 num=[x0 1]; %numerador
 den=[1 (b/m) (k/m)]; %denominador
-modeloosc=tf(num,den) %función de transferencia continua 
+modeloosc = tf(num,den) %función de transferencia continua 
 step(modeloosc,2*pi)
 impulse(modeloosc,2*pi)
