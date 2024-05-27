@@ -6,7 +6,7 @@ pasos=100000;
 dx=(limsup-liminf)/pasos;
 intf=0;
 for  x=liminf:dx:limsup
-    f=func_1(x);
+    f=sin(x);
     intf=intf+f*dx;
     
     
